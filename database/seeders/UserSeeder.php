@@ -4,15 +4,16 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class UserSeeder extends Seeder
 {
     public function run()
     {
         DB::table('users')->insert([
-            'name'=>'ali Mohamed',
-            'email'=>'ali@gmail.com',
-            'password'=>bcrypt('123')
+            'name'=>'Mohamed',
+            'email'=>'mo@gmail.com',
+            'password'=>Hash::make('123')
         ]);
     }
 }

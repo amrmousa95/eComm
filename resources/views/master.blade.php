@@ -9,10 +9,61 @@ use Illuminate\Support\Facades\view
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ecommerce</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"></head>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    img.slider-img
+    {
+        height: 400px !important;
+    }
+    .carousel-custom
+    {
+        color: #008800;
+    }
+    .trend-img
+    {
+        height: 100px;
+    }
+    .trend
+    {
+        float: left;
+        width: 20%;
+    }
+    .trend-products h2
+    {
+        margin: 40px;
+    }
+    .details-img
+    {
+        height: 200px;
+    }
+    .search-box
+    {
+        width: 400px !important;
+    }
+    .search-box:hover{
+        border: #008800 !important;
+    }
+    .custom-search:hover
+    {
+        background-color: #008800;
+        color: white;
+    }
+    .cart-list
+    {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+    }
+</style>
 <body>
 {{view::make('header')}}     {{--include header page--}}
 @yield('content')
